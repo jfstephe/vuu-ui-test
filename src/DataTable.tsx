@@ -3,6 +3,7 @@ import { useData } from "@vuu-ui/vuu-utils";
 import { Table } from "@vuu-ui/vuu-table";
 import type { TableConfig } from "@vuu-ui/vuu-table-types";
 import "./DataTable.css"
+import css from "./DataTable2.css"
 
 const config: TableConfig = {
   columns: [
@@ -14,6 +15,7 @@ const config: TableConfig = {
 };
 
 export function DataTable() {
+  console.log(css);
   const { VuuDataSource } = useData();
   const dataSource = useMemo(
     () =>
