@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { useData } from "@vuu-ui/vuu-utils";
 import { Table } from "@vuu-ui/vuu-table";
 import type { TableConfig } from "@vuu-ui/vuu-table-types";
+import "./DataTable.css"
 
 const config: TableConfig = {
   columns: [
@@ -26,6 +27,7 @@ export function DataTable() {
   return (
     <Table
       config={config}
+      className='testTable'
       dataSource={dataSource}
       rowHeight={20}
       viewportRowLimit={10}
